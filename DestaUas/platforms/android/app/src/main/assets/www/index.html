@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DESTA</title>
+
+	<!--- css -->
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./font-awesome/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript" src="./style.js"></script>
+	<script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.menu-header, .menu-footer{
+			position: fixed;
+			background: rgba(85, 85, 43, 0.9);
+			color: white;
+			font-weight: 800;
+		}
+		.box-data, .box-input{
+			width: 50%;
+			text-align: center;
+			float: left;
+			padding-top: 1%;
+		}
+		.lapor{
+			border-left: 1px solid black;
+		}
+		.box-input{
+			padding-bottom: 1%;
+		}
+		.menu-header{
+			top: 0px;
+			left: 0px;
+		}
+		.menu-footer{
+			bottom: 0px;
+			left: 0px;
+		}
+		.box{
+			width: 100%;
+		}
+		.container{
+			margin-top: 7%;
+			margin-bottom: 7%;
+			margin-left: 9%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="box menu-header">
+			<div class="box-data register" onclick="$('#konten').load('./data_register.html')">
+				<label>DATA REGISTER</label>
+			</div>
+			<div class="box-data lapor" onclick="$('#konten').load('./data_lapor.html')">
+				<label>DATA LAPOR</label>
+			</div>
+		</div>
+		<div class="box container" id="konten"></div>
+		<div class="box menu-footer">
+			<div class="box-input register" onclick="$('#konten').load('./input_register.html')">
+				REGISTER
+			</div>
+			<div class="box-input lapor" onclick="$('#konten').load('./input_lapor.html')">
+				LAPOR
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#konten').load('./data_register.html');
+		});
+	</script>
+</body>
+</html>

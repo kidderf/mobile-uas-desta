@@ -1,0 +1,22 @@
+<style type="text/css">
+  .row, .account-wall{
+    
+  }
+  .account-wall{
+    width: 100%;
+    padding-top: 25%;
+  }
+  .btn-simpan{
+    margin-top: 3%;
+  }
+</style>
+<div class="row">
+  <div class="account-wall">
+    <form id="form-register">
+      <input type="text" class="form-control" id="nim" name="nim" placeholder="NIM" onkeypress="return onlyNumeric(event)" required autofocus>
+      <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" required>
+      <input type="text" class="form-control" id="email" name="email" placeholder="Email" required><br>
+      <span class="btn btn-lg btn-primary btn-block btn-simpan" onclick="simpanRegister()"> REGISTER </span>
+    </form>
+  </div>
+</div>
